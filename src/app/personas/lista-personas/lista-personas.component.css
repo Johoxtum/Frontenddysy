@@ -1,0 +1,48 @@
+#container h1{
+
+    font-size: 35px;
+    display: inline-block;
+    color: #3c93b0;
+    position: relative;
+    left: 150px;
+    margin:  10px;
+
+
+}
+table{
+    border-collapse: collapse;
+    font-size: 12pt;
+    font-family: times, "Times New Roman",;
+    position: relative;
+    left: 150px;
+    border: 1px solid;
+}
+
+table th{
+
+    text-align:center;
+    padding: 10px;
+    background: #3d7ba8;
+    color: white;
+    justify-content: center;
+    
+}
+
+table tr:nth-child(odd) {
+    
+    background: lightgray;
+}
+table td{
+    padding: 12px;
+    text-align: center;
+}
+
+.link_edit{
+    color: #0ca4ce;
+}
+.link_delete{
+    color: #f26b6b;
+}
+
+
+

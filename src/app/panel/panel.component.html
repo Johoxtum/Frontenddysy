@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>sistema</title>
+</head>
+<body>
+	<header>
+		<div class="header">
+			
+			<h1>Panel de inicio</h1>
+			<div class="optionsBar">
+				<p>Base de datos, Yummy Sorpresa</p>
+				<span>|</span>
+				<span class="user">Johoxtum Jimenez</span>
+				<img class="photouser" src="assets/user.png" alt="Usuario">
+				<a href="#"><img class="close" src="assets/salir.png" alt="Salir del sistema" title="Salir"></a>
+			</div>
+		</div>
+		<nav>
+			<ul>
+                
+				 <li><a href="#"><i class="fas fa-home"></i>Inicio</a></li>
+				<li class="principal">
+					<a href="#" routerLink="/usuarios"><i class="fas fa-users"></i>Personas</a>
+					<ul>
+						<li><a href="#" routerLink="/crear_persona"><i class="fas fa-user-plus"></i>Nueva persona</a></li>
+						<li><a href="#" routerLink="/lista_personas" ><i class="fas fa-users"></i>Lista de Personas</a></li>
+					</ul>
+				</li>
+				<li class="principal">
+					<a href="#">Clientes</a>
+					<ul>
+						<li><a href="#">Nuevo Cliente</a></li>
+						<li><a href="#">Lista de Clientes</a></li>
+					</ul>
+				</li>
+				<li class="principal">
+					<a href="#">Proveedores</a>
+					<ul>
+						<li><a href="#">Nuevo Proveedor</a></li>
+						<li><a href="#">Lista de Proveedores</a></li>
+					</ul>
+				</li>
+				<li class="principal">
+					<a href="#"><i class="fas fa-gifts"></i>Productos</a>
+					<ul>
+						<li><a href="#" routerLink="/registrar_producto"><i class="fas fa-gift"></i>Nuevo Producto</a></li>
+						<li><a href="#"><i class="fas fa-clipboard-list"></i>Lista de Productos</a></li>
+					</ul>
+				</li>
+				<li class="principal">
+					<a href="#"><i class="fas fa-receipt"></i>Facturas</a>
+					<ul>
+						<li><a href="#"><i class="fas fa-file-invoice-dollar"></i>Nuevo Factura</a></li>
+						<li><a href="#"><i class="fas fa-clipboard-list"></i>Facturas</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section id="container">
+		<h1>Bienvenido al sistema</h1>
+	</section>
+</body>
+</html>
