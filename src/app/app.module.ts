@@ -9,6 +9,9 @@ import { ListaPersonasComponent } from './personas/lista-personas/lista-personas
 import { EditarComponent } from './personas/editar/editar.component';
 import { RegistrarComponent } from './productos/registrar/registrar.component';
 import { ListaProductosComponent } from './productos/lista-productos/lista-productos.component';
+import { LoginBServiceService } from './servicios/login-bservice.service';
+import { HttpClientModule } from '@angular/common/http';
+import { ListaPersonasService } from './servicios/lista-personas.service';
 
 
 
@@ -23,14 +26,17 @@ import { ListaProductosComponent } from './productos/lista-productos/lista-produ
     RegistrarComponent,
     ListaProductosComponent,
     
-    
-    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    LoginBServiceService,
+    ListaPersonasService
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

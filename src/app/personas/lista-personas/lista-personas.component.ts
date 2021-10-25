@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ListaPersonasService } from 'src/app/servicios/lista-personas.service';
 
 @Component({
   selector: 'app-lista-personas',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lista-personas.component.css']
 })
 export class ListaPersonasComponent implements OnInit {
-
-  constructor() { }
+  lista:any;
+  constructor(public listaService:ListaPersonasService) { }
 
   ngOnInit(): void {
+    this.listaService.getLista().subscribe(
+      (r) => {this.lista= r; console.log(r)},
+      (err) => {console.error(err)}
+    )
   }
+  public nombres: String='';
+  public apellidos: String='';
 
 }

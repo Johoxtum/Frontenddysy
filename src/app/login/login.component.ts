@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Location } from '@angular/common';
+import { LoginBServiceService } from '../servicios/login-bservice.service';
 
 @Component({
   selector: 'app-login',
@@ -8,10 +8,21 @@ import { Location } from '@angular/common';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private location: Location) { }
+  login:any;
+  constructor( public loginService:LoginBServiceService) { 
+    
+  }
 
-  ngOnInit(): void {
+  ngOnInit(){
+
+    this.loginService.getLogin().subscribe(
+      (r) => {this.login= r; console.log(r)},
+      (err) => {console.error(err)}
+      
+    )
   }
   
+  public usuario: String='';
+  public password: String='';
 
 }
